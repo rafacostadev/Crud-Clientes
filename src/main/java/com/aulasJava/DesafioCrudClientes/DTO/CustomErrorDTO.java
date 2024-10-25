@@ -2,13 +2,13 @@ package com.aulasJava.DesafioCrudClientes.DTO;
 
 import java.time.Instant;
 
-public class CustomError {
+public class CustomErrorDTO {
 	Instant timeStamp;
 	Integer status;
 	String error;
 	String path;
 
-	public CustomError(Instant timeStamp, Integer status, String error, String path) {
+	public CustomErrorDTO(Instant timeStamp, Integer status, String error, String path) {
 		super();
 		this.timeStamp = timeStamp;
 		this.status = status;
