@@ -59,14 +59,39 @@ Abaixo estão alguns exemplos de uso dos endpoints da aplicação:
 
 <h3>1. Cadastro de um novo cliente</h3>
 
-Endpoint: POST /cliente
-Body:
+- Endpoint: POST /clients
+- Body:
 
 ```bash
 {
-  "nome": "Rafael Costa",
-  "cpf": "11111111123",
-  "income": 4500.00,
-  "birthDate": "1999-02-27",
-  "children": 0
+   "nome": "Rafael Costa",
+   "cpf": "11111111123",
+   "income": 4500.00,
+   "birthDate": "1999-02-27",
+   "children": 0
 }
+```
+<h3>2. Listagem de todos os clientes</h3>
+
+- Endpoint: GET /clients
+
+<h3>3. Consulta de cliente por ID</h3>
+
+- Endpoint: GET /clients/{id}
+
+<h3>4. Atualização de dados do cliente</h3>
+
+- Endpoint: PUT /clients/{id}
+Body:
+```bash
+{
+   "nome": "Joana Gomes",
+   "cpf": "33322233305",
+   "income": 5500.00,
+   "birthDate": "1985-05-15",
+   "children": 3
+}
+```
+<h3>5. Exclusão de um cliente</h3>
+
+- Endpoint: DELETE /clients/{id}
